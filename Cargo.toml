@@ -1,0 +1,10 @@
+[package]
+name = "SigmaOS-psmisc"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "SigmaOS psmisc component - system_utilities"
+
+[lib]
+name = "psmisc"
+path = "src/lib.rs"
