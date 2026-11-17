@@ -3,7 +3,7 @@ name = "SigmaOS-psmisc"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "psmisc component"
+description = "Psmisc"
 upstream = []
 
 [contract]
