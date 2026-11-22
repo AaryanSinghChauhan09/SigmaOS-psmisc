@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-psmisc Component Wiki
+# SigmaOS-psmisc Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-psmisc provides Psmisc for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-psmisc provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-psmisc Abstraction
-- Fail-Fast on SigmaOS-psmisc Initialization Errors
-- Deterministic SigmaOS-psmisc Setup
-- Clear Abstraction Over SigmaOS-psmisc APIs
-- Composition over Inheritance for SigmaOS-psmisc extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-psmisc Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-psmisc Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-psmisc Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-psmisc APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-psmisc extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-psmisc follows a SigmaOS-psmisc pattern:
+SigmaOS-psmisc follows a SigmaOS-psmisc pattern:
 - **SigmaOS-psmisc Core**: Provides SigmaOS-psmisc support, SigmaOS-psmisc management, and SigmaOS-psmisc tracking
 - **Management**: Supports SigmaOS-psmisc management, SigmaOS-psmisc configuration, and SigmaOS-psmisc lifecycle
 - **Tracking**: Supports SigmaOS-psmisc status, SigmaOS-psmisc tracking, and SigmaOS-psmisc lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-psmisc follows a SigmaOS-psmisc pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-psmisc by given configuration
--  - Register a SigmaOS-psmisc by given name
--  - Get SigmaOS-psmisc status and SigmaOS-psmisc availability
--  - Track SigmaOS-psmisc management and SigmaOS-psmisc tracking
+- Manage a SigmaOS-psmisc by given configuration
+- Register a SigmaOS-psmisc by given name
+- Get SigmaOS-psmisc status and SigmaOS-psmisc availability
+- Track SigmaOS-psmisc management and SigmaOS-psmisc tracking
 - Error types for SigmaOS-psmisc failure scenarios or unsupported SigmaOS-psmisc types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-psmisc init, SigmaOS-psmisc management)
 3. **Assert**: Verify the expected SigmaOS-psmisc results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-psmisc initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-psmisc failure scenarios
 - Unit tests provided for SigmaOS-psmisc management and configuration
